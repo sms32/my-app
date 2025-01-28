@@ -46,9 +46,10 @@ const AppContent = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
       
       {/* Footer appears on all pages */}
-      <Footer />
+      
     </>
   );
 };

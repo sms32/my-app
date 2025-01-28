@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // ✅ Import Link
 import "./Footer.css";
 
 const Footer = () => {
@@ -9,9 +10,11 @@ const Footer = () => {
         <div className="footer-logo">
           <h2>Anointing Prayer Palace</h2>
           <p>
-          Anointing Prayer Palace is one of the most inspiring prayer centres in the world. 
-          People come here for spiritual<br/> regeneration and to experience 
-          God’s healing power in their soul, mind and body.<br/> <br/> <big><b> 1 Samuel 16:3 </b></big><br/> <b>You are to anoint for me the one I indicate.</b>
+            Anointing Prayer Palace is one of the most inspiring prayer centres in the world.
+            People come here for spiritual<br /> regeneration and to experience 
+            God’s healing power in their soul, mind and body.<br /> <br /> 
+            <big><b>1 Samuel 16:3</b></big><br /> 
+            <b>You are to anoint for me the one I indicate.</b>
           </p>
         </div>
 
@@ -19,12 +22,12 @@ const Footer = () => {
         <div className="footer-links">
           <h3 className="Explore">Explore</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/About">About Us</a></li>
-            <li><a href="/Message">Messages</a></li>
-            <li><a href="/Prayer">Prayer</a></li>
-            <li><a href="/Donate">Donate</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>  {/* ✅ Changed to Link */}
+            <li><Link to="/About">About Us</Link></li>
+            <li><Link to="/Message">Messages</Link></li>
+            <li><Link to="/Prayer">Prayer</Link></li>
+            <li><Link to="/Donate">Donate</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
