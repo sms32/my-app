@@ -71,7 +71,7 @@ li:hover {
   cursor: pointer;
   position: absolute;
   top: 50%; /* Aligns the menu button vertically */
-  right: 1rem; /* Stays on the right side */
+  right: 0.5rem; /* Stays on the right side */
   transform: translateY(-50%); /* Center vertically */
   transition: background-color 0.3s, color 0.3s;
 }
@@ -95,7 +95,7 @@ li:hover {
   }
   
   .navbar h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     margin: 0;
   }
@@ -129,6 +129,8 @@ li:hover {
 
   .menu-button {
     display: block;
+    right: 0.5rem; /* Stays on the right side */
+
   }
 
   .close-button {

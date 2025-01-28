@@ -269,6 +269,11 @@ button[type="submit"]:hover {
     .prayer-requests-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .video-section .section-title {
+        width: 80%;
+
+    
+    }
 }
 
 .request-title {

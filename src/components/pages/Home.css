@@ -205,6 +205,7 @@
       padding: 8px 16px; /* Smaller button size */
       font-size: 14px; /* Adjust button text size */
     }
+    
   }
 
 /* Gallery Section */
@@ -279,4 +280,17 @@
   font-weight: 700;
   font-size: 50px;
   color: #182440;
+}
+
+
+@media (max-width: 768px) {
+
+.gallery-item {
+  height: 200px; /* Adjust height as needed */
+  width: 95%; /* Maintain aspect ratio */
+  
+}
+
+
+
 }
