@@ -1,0 +1,300 @@
+.ab{background-color: #f9f5f5ea;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.alt-section {
+    background: #e8e8e8;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 0;
+
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures it matches the height of the card */
+}
+
+.styled-image {
+    width: 90%; /* Ensures it takes up the entire width of its container */
+    height: 100%; /* Ensures it takes up the entire height of its container */
+    object-fit: cover; /* Ensures the image scales and crops proportionally */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.styled-images {
+    width: 70%; /* Ensures it takes up 70% of its container */
+    height: 100%; /* Ensures it takes up the entire height of its container */
+    object-fit: cover; /* Ensures the image scales and crops proportionally */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures the image behaves like a block-level element */
+}
+
+@media screen and (max-width: 768px) {
+    .styled-images {
+        width: 100%; /* Ensures the image takes up the full width of its container on mobile */
+        max-width: 400px;
+justify-content: center;    }
+
+.content-wrapper.reverse{
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+
+.text-content {
+    flex: 1;
+    max-width: 45%;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 10px;
+
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.text-content p b {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-wrapper.reverse {
+        flex-direction: column;
+    }
+
+    .styled-image{
+        max-width: 70%;
+    }
+
+    .image-content,
+    .text-content {
+        max-width: 100%;
+    }
+}
+
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa; /* Cream-colored background */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .image-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .service-image {
+    width: 100%;
+    border-radius: 8px;
+    height: 60vh;
+  }
+  
+  .text-section {
+    flex: 2;
+    padding: 20px;
+  }
+  
+.An{
+    text-align: center;
+    margin-top: 0;
+}
+  .Ann{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 1px;
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .service-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #e8dfdf;
+    }
+  
+    .service-image{
+height: 50vh;
+    }
+    
+    .image-section {
+      padding: 5px 0;
+    }
+  
+    .text-section {
+      padding: 10px;
+    }
+  }
+
+
+
+.Prayers{
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    background-color:#e8e8e8 ;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+  .text-sections {
+    flex: 2;
+    padding: 20px;
+  }
+ 
+.AAA{
+    text-align: center;
+}
+.Ans{
+    text-align: center;
+    margin-top: 0;
+}
+  .Anns{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 1px;
+    margin-top: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+   
+  
+    
+  
+    .text-section {
+      padding: 10px;
+    }
+  }
+
+/* Gallery Section CSS */
+.gallery-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 40px;
+    margin-top: 20px;
+  }
+  
+  .gallery-cards {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .gallery-images {
+    width: 100%;
+    height: 30vh;
+  }
+  
+  .gallery-contents {
+    padding: 15px;
+  }
+  
+  .gallery-contents h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #0f172a;
+  }
+  
+  .gallery-contents p {
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .galer{
+    padding: 40px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .gt{
+    text-align: center;
+    font-size: 2.3rem;
+    background-color: #0f172a;
+    color: white;
+    border-radius: 8px;
+    width: 60%;
+    
+    margin: 0 auto;
+  }
+
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .gallery-section {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-section {
+      grid-template-columns: 1fr;
+    }
+  }
