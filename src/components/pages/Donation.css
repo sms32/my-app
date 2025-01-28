@@ -6,6 +6,7 @@
   
   .main-container-DO {
     background: url("../assets/DONATEBG.jpg") no-repeat center center/cover;
+    background-position: 10px 80px;
     background-size:contain;
     color: azure;
     height: 170vh;
