@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // In case you want to add a navigation link
+// import { Link } from "react-router-dom"; // In case you want to add a navigation link
 import "./Donation.css"; // Ensure your CSS file is correct
 import qr from "../assets/DEMOQR.jpg"; // Your image path (update if necessary)
 import Navbar from "../Navbar"; // Adjust the path based on your folder structure
