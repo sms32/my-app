@@ -8,6 +8,7 @@ import Prayer from "./components/pages/Prayer";
 import Message from "./components/pages/Message";
 import Donate from "./components/pages/Donation";
 import Loader from "./components/Loader"; // Import Loader component
+import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 
 const App = () => {
   return (
@@ -35,6 +36,8 @@ const AppContent = () => {
       {loading && <Loader />}
       
       <div className="content">
+      <ScrollToTop /> 
+
         {/* Routes handle switching between pages */}
         <Routes>
           <Route path="/" element={<Home />} />
