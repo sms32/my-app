@@ -6,7 +6,6 @@
   
   .main-container-DO {
     background: url("../assets/DONATEBG.jpg") no-repeat center center/cover;
-    background-position: 10px 80px;
     background-size:contain;
     color: azure;
     height: 170vh;
@@ -61,3 +60,10 @@
     font-size: 0.9rem;
     line-height: 1.5;
   }
+
+  @media (max-width: 768px) {
+
+    .main-container-DO {
+      background-position: 10px 80px;
+    }
+  }    

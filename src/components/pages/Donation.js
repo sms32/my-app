@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom"; // In case you want to add a navigation link
 import "./Donation.css"; // Ensure your CSS file is correct
-import qr from "../assets/DEMOQR.jpg"; // Your image path (update if necessary)
+import qr from "../assets/pay.jpg"; // Your image path (update if necessary)
 import Navbar from "../Navbar"; // Adjust the path based on your folder structure
 
 const DonationPage = () => {
@@ -18,10 +18,10 @@ const DonationPage = () => {
 
           <div className="upi-info-DO">
             <p>
-              <strong>UPI ID:</strong> EXAMPLE@SIB
+              <strong>UPI ID:</strong> jesusforindia80-1@okhdfcbank
             </p>
             <p>
-              <strong>G Pay Number:</strong> 700045000
+              <strong>G Pay Number:</strong> 9842196022
             </p>
             <img src={qr} alt="Demo QR Code" className="qr-code-DO" />
           </div>

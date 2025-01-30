@@ -34,16 +34,21 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="footer-contact">
           <h3>Contact</h3>
-          <p><strong>Address:</strong> 123 Serenity Road, Peace City</p>
-          <p><strong>Email:</strong> info@prayerpalace.com</p>
-          <p><strong>Phone:</strong> +1 234 567 890</p>
+          <p><strong>Address:</strong> Bro.V.Charles 
+W4/103 Church Street,
+Annaimalaiyanpatti,
+Uthamapalayam 
+Theni district 
+Pincode 625526</p>
+          <p><strong>Email:</strong> jesusforindia80@gmail.com</p>
+          <p><strong>Phone:</strong> +91 9842196022</p>
         </div>
 
         {/* Social Media */}
         <div className="footer-social">
           <h2>Join us on</h2>
           <div className="social-icons">
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
+            <a href="https://www.youtube.com/@anointingcharles9100" target="_blank" rel="noreferrer" aria-label="YouTube">
               <i className="fab fa-youtube"></i>
             </a>
           </div>
