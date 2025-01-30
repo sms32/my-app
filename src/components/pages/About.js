@@ -5,6 +5,9 @@ import choirImage from "../assets/Church.jpg";
 import sundaySchoolImage from "../assets/Charles.jpg";
 import dov from "../assets/dov.jpg";
 import dovv from "../assets/dovv.jpg";
+import { useEffect } from "react"; 
+import { useLocation } from "react-router-dom";
+
 
 // Gallery Images
 import gallery1 from "../assets/IMG8.jpg";
@@ -15,6 +18,19 @@ import gallery5 from "../assets/IMG4.jpg";
 import gallery6 from "../assets/IMG3.jpg";
 
 const AboutUs = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get("scrollTo");
+
+    if (scrollTo) {
+      const element = document.querySelector(`.${scrollTo}`);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
     return (
         <div>
             <Navbar />

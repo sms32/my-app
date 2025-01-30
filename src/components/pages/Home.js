@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Navbar from "../Navbar"; // Adjust the path based on your folder structure
 import promise from "../assets/promise.jpg";
+import { useNavigate } from "react-router-dom";
 
 // Gallery Images
 import gallery1 from "../assets/IMG8.jpg";
@@ -12,6 +13,15 @@ import gallery5 from "../assets/IMG4.jpg";
 import gallery6 from "../assets/IMG3.jpg";
 
 function Hero() {
+  const navigate = useNavigate();
+
+  const handleSeeMoreClick = () => {
+    navigate("/about?scrollTo=galer");
+  };
+
+  const readMoreClick = () => {
+    navigate("/message?scrollTo=todays-message-section");
+  };
   return (
     <div>
       <Navbar />
@@ -28,7 +38,8 @@ function Hero() {
           <div className="promise-content">
             <h2>Today's Promise Verse</h2>
             <p>For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future. - Jeremiah 29:11</p>
-            <button>Read More</button>
+            <button className="see-more-button" onClick={readMoreClick}>
+            Read More</button>
           </div>
         </div>
       </div>
@@ -46,7 +57,8 @@ function Hero() {
       <img src={gallery6} alt="Gallery 6" className="gallery-item" />
     </div>
   </div>
-  <button className="see-more-button">See More</button>
+  <button className="see-more-button" onClick={handleSeeMoreClick}>
+  See More</button>
 </div>
 
 

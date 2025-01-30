@@ -2,11 +2,26 @@ import React, { useState } from "react";
 import "./Message.css"; // Your CSS file
 import Navbar from "../Navbar"; // Adjust the path based on your project structure
 import mes from "../assets/mes.mp4"; // Replace with your video path
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Messages = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get("scrollTo");
+
+    if (scrollTo) {
+      const element = document.querySelector(`.${scrollTo}`);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   const sermons = [
     {
       title: "Where You Meet With God",
